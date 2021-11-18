@@ -4,6 +4,36 @@
     padding:0;
 }
 
+body::after{
+    display: table;
+    content:"";
+    clear: both;
+}
+
 .saluti{
-    background-color: red;
+    background-color: lightblue;
+    width: 20%;
+    border: 1px solid orange;
+}
+
+.wewe {
+    background-color: coral;
+    margin-left: 10px;
+    margin-top: 10px;   
+    width: calc(100% / 4 - 20px);
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.wewe:hover span {
+    display: inline-block;
+}
+
+.wewe span {
+    margin-left: 10px;
+    background-color: blueviolet;
+    display: none;
 }
